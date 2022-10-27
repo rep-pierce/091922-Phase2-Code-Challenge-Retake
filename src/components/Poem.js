@@ -7,7 +7,7 @@ function Poem({ poem }) {
     if(status===true){
       return 'Mark as Read'
     }else {
-      return 'Read'
+      return 'Mark as Unread'
     }
   }
 
