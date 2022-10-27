@@ -1,10 +1,13 @@
 import React from "react";
 import Poem from "./Poem";
 
-function PoemsContainer() {
+function PoemsContainer({ pomes }) {
+
+  const createPoems = pomes.map(pome => <Poem key={pome.id} poem={pome} />)
+
   return (
     <div className="poems-container">
-      {/* render a list of <Poem> components in here */}
+      {createPoems}
     </div>
   );
 }
